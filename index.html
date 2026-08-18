@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modelli 3D — Prefabbricati Moioli</title>
+<meta name="description" content="Indice dei visualizzatori 3D dei sistemi di copertura Prefabbricati Moioli.">
+<link rel="icon" href="Moioli%20Design%20System/assets/logo/moioli-sigla-colore.svg">
+
+<style>
+/* ── Font del design system ─────────────────────────────────────── */
+@font-face{font-family:'Space Grotesk';src:url('Moioli%20Design%20System/assets/fonts/space-grotesk-500-latin.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Space Grotesk';src:url('Moioli%20Design%20System/assets/fonts/space-grotesk-600-latin.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Space Grotesk';src:url('Moioli%20Design%20System/assets/fonts/space-grotesk-700-latin.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'IBM Plex Sans';src:url('Moioli%20Design%20System/assets/fonts/ibm-plex-sans-400-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'IBM Plex Sans';src:url('Moioli%20Design%20System/assets/fonts/ibm-plex-sans-500-latin.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'IBM Plex Sans';src:url('Moioli%20Design%20System/assets/fonts/ibm-plex-sans-600-latin.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'IBM Plex Sans';src:url('Moioli%20Design%20System/assets/fonts/ibm-plex-sans-700-latin.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('Moioli%20Design%20System/assets/fonts/ibm-plex-mono-400-latin.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('Moioli%20Design%20System/assets/fonts/ibm-plex-mono-500-latin.woff2') format('woff2');font-weight:500;font-display:swap}
+
+/* ── Token ──────────────────────────────────────────────────────── */
+:root{
+  --navy:#1D2A44; --navy-deep:#16203A; --navy-ink:#11192E;
+  --red:#B13733; --red-deep:#963029; --red-soft:#D98581;
+  --bg-1:#F5F6F7; --bg-2:#E1E3E5; --white:#FFFFFF;
+  --text:#3B3F45; --text-2:#686F79; --ui:#9CA3AF;
+  --ph-bg:#EEF0F2; --ph-border:#D3D7DC; --ph-text:#5A6472;
+  --text-on-dark-muted:#B7BCC4;
+  --font-display:'Space Grotesk',sans-serif;
+  --font-body:'IBM Plex Sans',sans-serif;
+  --font-mono:'IBM Plex Mono',monospace;
+  --content-max:1280px; --gutter:32px;
+  --radius-sm:3px; --radius-md:4px;
+  --shadow-card:0 28px 56px -28px rgba(29,42,68,.45);
+  --shadow-lift:0 18px 36px -22px rgba(29,42,68,.35);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --duration-fast:150ms; --duration-slow:300ms;
+}
+@media (max-width:600px){:root{--gutter:20px}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg-1); color:var(--text);
+  font-family:var(--font-body); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--content-max);margin:0 auto;padding:0 var(--gutter)}
+.eyebrow{
+  font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  margin:0;
+}
+
+/* ── Header ─────────────────────────────────────────────────────── */
+.site-header{background:var(--navy-deep)}
+.site-header .wrap{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;padding-top:20px;padding-bottom:20px;
+}
+.site-header img{height:34px;width:auto;display:block}
+.site-header .meta{
+  font-family:var(--font-mono);font-size:11.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--text-on-dark-muted);
+}
+
+/* ── Hero ───────────────────────────────────────────────────────── */
+.hero{background:var(--navy);color:#fff;padding:72px 0 84px}
+.hero .eyebrow{color:var(--red-soft)}
+.hero h1{
+  font-family:var(--font-display);font-weight:600;
+  font-size:clamp(42px,6.6vw,94px);line-height:1.02;
+  margin:18px 0 0;max-width:16ch;
+}
+.hero p{
+  margin:24px 0 0;max-width:56ch;color:var(--text-on-dark-muted);font-size:16px;
+}
+
+/* ── Griglia modelli ────────────────────────────────────────────── */
+main{padding:64px 0 96px}
+.section-head{
+  display:flex;align-items:baseline;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+  padding-bottom:14px;border-bottom:1px solid var(--bg-2);margin-bottom:32px;
+}
+.section-head .eyebrow{color:var(--text-2)}
+.section-head .count{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.16em;color:var(--ui);text-transform:uppercase}
+
+.grid{
+  display:grid;gap:24px;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+}
+
+.card{
+  position:relative;display:flex;flex-direction:column;
+  background:var(--white);border:1px solid var(--bg-2);border-radius:var(--radius-md);
+  overflow:hidden;
+  transition:transform var(--duration-slow) var(--ease),
+             box-shadow var(--duration-slow) var(--ease),
+             border-color var(--duration-fast) var(--ease);
+}
+a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift);border-color:var(--ph-border)}
+a.card:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+/* linguetta rossa: posizione verticale diversa per sistema (indice a rubrica) */
+.card::before{
+  content:"";position:absolute;left:0;width:4px;height:56px;
+  background:var(--red);top:var(--tab-top,32px);
+  z-index:2;
+}
+.card.is-soon::before{background:var(--ph-border)}
+
+.thumb{
+  position:relative;aspect-ratio:16/10;background:var(--navy-ink);overflow:hidden;
+}
+.thumb img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform var(--duration-slow) var(--ease);
+}
+a.card:hover .thumb img{transform:scale(1.03)}
+.thumb.is-empty{
+  display:flex;align-items:center;justify-content:center;
+  background:var(--ph-bg);border-bottom:1px solid var(--ph-border);
+}
+.thumb.is-empty span{
+  font-family:var(--font-mono);font-size:11.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ph-text);
+}
+
+.badge{
+  position:absolute;top:12px;right:12px;z-index:2;
+  font-family:var(--font-body);font-size:11.5px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;
+  padding:5px 10px;border-radius:var(--radius-sm);
+  background:var(--red);color:#fff;
+}
+.badge.is-soon{background:var(--ph-bg);color:var(--ph-text);border:1px solid var(--ph-border)}
+
+.card-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.card-body .eyebrow{color:var(--text-2);font-size:11.5px}
+.card-body h2{
+  font-family:var(--font-display);font-weight:600;font-size:20px;line-height:1.25;
+  margin:10px 0 0;color:var(--navy);
+}
+.card-body p{margin:10px 0 0;font-size:14.5px;color:var(--text-2)}
+
+.specs{
+  list-style:none;margin:18px 0 0;padding:14px 0 0;border-top:1px solid var(--bg-2);
+  display:flex;flex-wrap:wrap;gap:6px 18px;
+  font-family:var(--font-mono);font-size:11.5px;letter-spacing:.04em;color:var(--text-2);
+}
+
+.cta{
+  margin-top:22px;align-self:flex-start;
+  font-family:var(--font-body);font-size:14px;font-weight:600;
+  padding:10px 20px;border-radius:var(--radius-sm);
+  background:var(--navy);color:#fff;
+  transition:background var(--duration-fast) var(--ease);
+}
+a.card:hover .cta{background:var(--red)}
+.cta.is-disabled{background:transparent;color:var(--ph-text);border:1px solid var(--ph-border);cursor:not-allowed}
+
+/* ── Footer ─────────────────────────────────────────────────────── */
+.site-footer{background:var(--navy-ink);color:var(--text-on-dark-muted);padding:40px 0}
+.site-footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.site-footer img{height:26px;width:auto;display:block;opacity:.9}
+.site-footer small{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  a.card:hover{transform:none}
+  a.card:hover .thumb img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" aria-label="Prefabbricati Moioli">
+      <img src="Moioli%20Design%20System/assets/logo/moioli-lockup-bianco.svg" alt="Prefabbricati Moioli">
+    </a>
+    <span class="meta">Visualizzatori 3D</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Cataloghi tecnici</p>
+    <h1>Modelli 3D dei sistemi di copertura</h1>
+    <p>Ogni sistema ha un visualizzatore autonomo, apribile direttamente dal browser su desktop e su tablet. Selezionare il sistema per aprire il modello.</p>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Sistemi disponibili</p>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <img src="Moioli%20Design%20System/assets/logo/moioli-lockup-bianco.svg" alt="Prefabbricati Moioli">
+    <small>Dove la forma prende volume</small>
+  </div>
+</footer>
+
+<script>
+/* ───────────────────────────────────────────────────────────────────
+   Per aggiungere un nuovo modello: inserire una voce qui sotto.
+   href  : percorso del file standalone (null = non ancora disponibile)
+   tab   : posizione verticale della linguetta rossa, in px (indice a rubrica)
+   ─────────────────────────────────────────────────────────────────── */
+const MODELLI = [
+  {
+    eyebrow: 'Copertura alare',
+    nome: 'Tecnowing',
+    descrizione: 'Visualizzatore del tegolo alare Tecnowing, con i relativi elementi strutturali.',
+    href: 'tecnowing-viewer.html',
+    thumb: 'Moioli Design System/assets/catalogo-tecnowing/foto-intradosso-1.jpg',
+    specs: ['Modello 3D', 'Desktop + iPad'],
+    tab: 70
+  },
+  {
+    eyebrow: 'Copertura Bacacier',
+    nome: 'Bacacier 4 ante',
+    descrizione: 'Modello non ancora pubblicato.',
+    href: null,
+    thumb: 'Moioli Design System/assets/catalogo/foto-copertura-interna-2.jpg',
+    specs: ['Dato da verificare'],
+    tab: 200
+  },
+  {
+    eyebrow: 'Copertura piana a tegoli',
+    nome: 'TT',
+    descrizione: 'Modello non ancora pubblicato.',
+    href: null,
+    thumb: null,
+    specs: ['Dato da verificare'],
+    tab: 340
+  }
+];
+
+const enc = p => p.split('/').map(encodeURIComponent).join('/');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const grid = document.getElementById('grid');
+grid.innerHTML = MODELLI.map(m => {
+  const attivo = Boolean(m.href);
+  const tag = attivo ? 'a' : 'div';
+  const attrs = attivo ? ` href="${enc(m.href)}"` : ' aria-disabled="true"';
+  const thumb = m.thumb
+    ? `<div class="thumb"><img src="${enc(m.thumb)}" alt="" loading="lazy"></div>`
+    : `<div class="thumb is-empty"><span>Foto in attesa</span></div>`;
+  const badge = attivo
+    ? '<span class="badge">Disponibile</span>'
+    : '<span class="badge is-soon">In preparazione</span>';
+  const cta = attivo
+    ? '<span class="cta">Apri il modello</span>'
+    : '<span class="cta is-disabled">Non disponibile</span>';
+  return `<${tag} class="card${attivo ? '' : ' is-soon'}" style="--tab-top:${m.tab}px"${attrs}>
+    <div style="position:relative">${thumb}${badge}</div>
+    <div class="card-body">
+      <p class="eyebrow">${esc(m.eyebrow)}</p>
+      <h2>${esc(m.nome)}</h2>
+      <p>${esc(m.descrizione)}</p>
+      <ul class="specs">${m.specs.map(s => `<li>${esc(s)}</li>`).join('')}</ul>
+      ${cta}
+    </div>
+  </${tag}>`;
+}).join('');
+
+const disponibili = MODELLI.filter(m => m.href).length;
+document.getElementById('count').textContent =
+  `${disponibili} di ${MODELLI.length} pubblicati`;
+</script>
+
+</body>
+</html>

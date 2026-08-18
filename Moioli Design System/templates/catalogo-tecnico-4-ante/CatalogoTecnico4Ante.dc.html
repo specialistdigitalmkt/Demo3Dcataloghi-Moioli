@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Catalogo tecnico 4 ante" description="Cartelletta tecnica a 4 ante (834×276 mm) — versione 2 del catalogo coperture, con QR in copertina e in ultima anta." -->
+<helmet><script src="./ds-base.js"></script><style>body{margin:0;background:#E1E3E5}</style></helmet>
+<div style="padding:48px;background:#E1E3E5;font-family:'IBM Plex Sans',sans-serif;display:flex;flex-direction:column;gap:48px;align-items:flex-start">
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;width:3336px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#5A6472;letter-spacing:.08em"><span>FACCIATA ESTERNA — 4 ante da 208,4 × 275,9 mm — piega a portafoglio</span><span>834 × 276 mm</span></div>
+<div style="position:relative;width:3336px;height:1104px;display:flex;box-shadow:0 18px 36px -22px rgba(29,42,68,.35);background:#fff">
+
+<div style="width:834px;height:1104px;overflow:hidden;position:relative"><img src="../../assets/catalogo/foto-copertura-interna-2.jpg" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+
+<div style="width:834px;height:1104px;background:#16203A;padding:70px 64px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between">
+<img src="../../assets/logo/moioli-lockup-bianco.svg" style="width:340px;display:block">
+<div style="display:flex;flex-direction:column;gap:34px">
+<div style="width:64px;height:2px;background:#B13733"></div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:15px;line-height:2;color:#FFFFFF">Via F.lli Kennedy 24<br>24060 Bagnatica (BG)<br>Tel 035 681239<br>info@prefabbricatimoioli.it<br>www.prefabbricatimoioli.it</div>
+<img src="../../assets/catalogo/certificazioni.png" style="width:300px;display:block">
+</div>
+</div>
+
+<div style="width:834px;height:1104px;background:#1D2A44;padding:70px 64px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden">
+<div style="position:absolute;top:70px;right:0;width:46px;height:250px;background:#B13733;display:flex;align-items:center;justify-content:center">
+<div style="transform:rotate(90deg);white-space:nowrap;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:15px;letter-spacing:.22em;color:#FFFFFF">BACACIER</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:26px;padding-right:70px">
+<div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:#D98581">Sistema di copertura</div>
+<div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:92px;line-height:.98;color:#FFFFFF">COPERTURA<br>BACACIER</div>
+<div style="width:120px;height:3px;background:#B13733"></div>
+<div style="font-family:'IBM Plex Sans',sans-serif;font-size:19px;line-height:1.55;color:#B7BCC4;max-width:520px">Struttura prefabbricata in c.a.p. per edifici logistici a grande luce libera.</div>
+</div>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-right:70px">
+<div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:22px;color:#D98581">Dove la forma prende volume</div>
+<sc-if value="{{ mostraQrCopertina }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;align-items:flex-end;gap:16px">
+<div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right">
+<img src="https://unpkg.com/lucide-static@0.451.0/icons/scan-line.svg" style="width:26px;height:26px;filter:invert(1);opacity:.9">
+<div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:15px;line-height:1.35;color:#FFFFFF;max-width:150px">scopri la soluzione.</div>
+</div>
+<div style="width:150px;height:150px;background:#EEF0F2;border:2px dashed #D3D7DC;box-sizing:border-box;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.5;color:#5A6472">QR<br>segnaposto<br>modello 3D</div>
+</div>
+</sc-if>
+</div>
+</div>
+
+<div style="width:834px;height:1104px;overflow:hidden;position:relative"><img src="../../assets/catalogo/foto-copertura-interna.jpg" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;left:0;right:0;bottom:0;padding:44px 48px;background:linear-gradient(to top,rgba(17,25,46,.85),rgba(17,25,46,0))">
+<div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#FFFFFF">Copertura in opera</div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#B7BCC4;margin-top:8px">Lamiera grecata su arcarecci precompressi</div>
+</div>
+</div>
+
+<sc-if value="{{ mostraPieghe }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;inset:0;pointer-events:none">
+<div style="position:absolute;top:0;bottom:0;left:834px;width:0;border-left:1px dashed rgba(228,40,41,.55)"></div>
+<div style="position:absolute;top:0;bottom:0;left:1668px;width:0;border-left:1px dashed rgba(228,40,41,.55)"></div>
+<div style="position:absolute;top:0;bottom:0;left:2502px;width:0;border-left:1px dashed rgba(228,40,41,.55)"></div>
+</div>
+</sc-if>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;justify-content:space-between;width:3336px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#5A6472;letter-spacing:.08em"><span>FACCIATA INTERNA — apertura a foto piena, numeri chiave, soluzioni, componenti e dati</span><span>834 × 276 mm</span></div>
+<div style="position:relative;width:3336px;height:1104px;display:flex;box-shadow:0 18px 36px -22px rgba(29,42,68,.35);background:#fff">
+
+<div style="width:834px;height:1104px;position:relative;overflow:hidden">
+<img src="../../assets/catalogo/foto-struttura-cantiere.jpg" style="width:100%;height:100%;object-fit:cover;display:block">
+<div style="position:absolute;left:0;right:0;bottom:0;background:#1D2A44;padding:54px 64px 60px;box-sizing:border-box;display:flex;flex-direction:column;gap:22px">
+<div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#D98581">Sistema copertura</div>
+<div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:62px;line-height:1;color:#FFFFFF">BACACIER</div>
+<div style="width:100px;height:3px;background:#B13733"></div>
+<div style="font-family:'IBM Plex Sans',sans-serif;font-size:17px;line-height:1.6;color:#FFFFFF">Il Sistema Bacacier è la risposta Moioli per edifici logistici a grande luce libera. Il sistema Bacacier permette di ridurre al minimo i pilastri interni, massimizzando la flessibilità degli spazi.</div>
+<div style="font-family:'IBM Plex Sans',sans-serif;font-size:15px;line-height:1.6;color:#B7BCC4">La struttura si compone di pilastri, travi principali a I, arcarecci e canali in c.a.p., con copertura in lamiera grecata integrabile con isolamento, lucernari e impianti fotovoltaici.</div>
+</div>
+</div>
+
+<div style="width:834px;height:1104px;background:#FFFFFF;padding:64px 56px;box-sizing:border-box;display:flex;flex-direction:column;gap:34px;border-left:1px solid #E1E3E5">
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;line-height:1.1;color:#1D2A44">Geometria e prestazioni</div>
+<div style="width:72px;height:3px;background:#B13733"></div>
+</div>
+<sc-if value="{{ mostraNumeri }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#E1E3E5">
+<div style="background:#F5F6F7;padding:26px 24px;display:flex;flex-direction:column;gap:6px"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:58px;line-height:1;color:#1D2A44">R180'</div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;line-height:1.4;color:#686F79">Resistenza al fuoco estendibile</div></div>
+<div style="background:#F5F6F7;padding:26px 24px;display:flex;flex-direction:column;gap:6px"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:58px;line-height:1;color:#1D2A44">4%</div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;line-height:1.4;color:#686F79">Pendenza di copertura</div></div>
+<div style="background:#F5F6F7;padding:26px 24px;display:flex;flex-direction:column;gap:6px"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:58px;line-height:1;color:#1D2A44">235<span style="font-size:26px;color:#686F79"> cm</span></div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;line-height:1.4;color:#686F79">Altezza massima trave a “I”</div></div>
+<div style="background:#F5F6F7;padding:26px 24px;display:flex;flex-direction:column;gap:6px"><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:58px;line-height:1;color:#1D2A44">96<span style="font-size:26px;color:#686F79"> cm</span></div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;line-height:1.4;color:#686F79">Altezza massima arcareccio</div></div>
+</div>
+</sc-if>
+<div style="display:flex;flex-direction:column;gap:12px;flex:1">
+<div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#686F79">Prospetto trasversale tipo</div>
+<div style="flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#F5F6F7"><img src="../../assets/catalogo/dis-prospetto.png" style="max-width:100%;max-height:100%;display:block"></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#686F79">Vantaggi</div>
+<div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px">
+<div style="display:flex;flex-direction:column;gap:10px"><img src="../../assets/catalogo/icon-luci-libere.png" style="width:38px;display:block"><div style="font-family:'IBM Plex Sans',sans-serif;font-size:12px;line-height:1.35;color:#3B3F45">Grandi luci libere</div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><img src="../../assets/catalogo/icon-pilastri-ridotti.png" style="width:38px;display:block"><div style="font-family:'IBM Plex Sans',sans-serif;font-size:12px;line-height:1.35;color:#3B3F45">Pilastri interni ridotti</div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><img src="../../assets/catalogo/icon-resistenza-fuoco.png" style="width:38px;display:block"><div style="font-family:'IBM Plex Sans',sans-serif;font-size:12px;line-height:1.35;color:#3B3F45">Resistenza al fuoco</div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><img src="../../assets/catalogo/icon-nodi-sismici.png" style="width:38px;display:block"><div style="font-family:'IBM Plex Sans',sans-serif;font-size:12px;line-height:1.35;color:#3B3F45">Nodi sismici certificati</div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><img src="../../assets/catalogo/icon-fotovoltaico.png" style="width:38px;display:block"><div style="font-family:'IBM Plex Sans',sans-serif;font-size:12px;line-height:1.35;color:#3B3F45">Fotovoltaico e lucernari</div></div>
+</div>
+</div>
+</div>
+
+<div style="width:834px;height:1104px;overflow:hidden;background:#F5F6F7;padding:56px 56px;box-sizing:border-box;display:flex;flex-direction:column;gap:26px;border-left:1px solid #E1E3E5">
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;line-height:1.1;color:#1D2A44">Soluzioni</div>
+<div style="width:72px;height:3px;background:#B13733"></div>
+<div style="font-family:'IBM Plex Sans',sans-serif;font-size:14px;color:#686F79">Ogni configurazione, una risposta.</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:300px 300px;gap:18px">
+<div style="background:#FFFFFF;padding:20px;display:flex;flex-direction:column;gap:12px"><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#686F79">Sezione trasversale arcareccio</div><div style="flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center"><img src="../../assets/catalogo/dis-sez-arcareccio.png" style="max-width:100%;max-height:100%;display:block"></div></div>
+<div style="background:#FFFFFF;padding:20px;display:flex;flex-direction:column;gap:12px"><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#686F79">Vista laterale</div><div style="flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center"><img src="../../assets/catalogo/dis-vista-laterale.png" style="max-width:100%;max-height:100%;display:block"></div></div>
+<div style="background:#FFFFFF;padding:20px;display:flex;flex-direction:column;gap:12px"><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#686F79">Sezione trasversale</div><div style="flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center"><img src="../../assets/catalogo/dis-sez-trasversale.png" style="max-width:100%;max-height:100%;display:block"></div></div>
+<div style="background:#FFFFFF;padding:20px;display:flex;flex-direction:column;gap:12px"><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#686F79">Fissaggio travi centrali</div><div style="flex:1;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center"><img src="../../assets/catalogo/dis-fiss-centrali.png" style="max-width:100%;max-height:100%;display:block"></div></div>
+</div>
+<div style="background:#FFFFFF;padding:18px 20px;height:130px;box-sizing:border-box;display:flex;gap:24px;align-items:center">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px"><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#686F79">Fissaggio travi laterali</div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:12px;line-height:1.5;color:#3B3F45">Sezione longitudinale del nodo trave-pilastro sul perimetro.</div></div>
+<img src="../../assets/catalogo/dis-fiss-laterali.png" style="height:94px;display:block">
+</div>
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.5;color:#5A6472">*Misure indicate in cm. Compatibile con impianti fotovoltaici, evacuatori di fumo e calore (EFC) e sistemi antincendio Sprinkler.</div>
+</div>
+
+<div style="width:834px;height:1104px;background:#FFFFFF;padding:64px 56px;box-sizing:border-box;display:flex;flex-direction:column;gap:28px;border-left:1px solid #E1E3E5">
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;line-height:1.1;color:#1D2A44">Componenti e dati tecnici</div>
+<div style="width:72px;height:3px;background:#B13733"></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+<div style="display:flex;flex-direction:column;gap:10px"><div style="height:120px;background:#F5F6F7;display:flex;align-items:center;justify-content:center"><img src="../../assets/catalogo/dis-comp-pilastro.png" style="max-height:100px;max-width:100%;display:block"></div><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#1D2A44">Pilastro con armatubo</div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:11.5px;line-height:1.45;color:#686F79">Mensole per appoggio travi.</div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><div style="height:120px;background:#F5F6F7;display:flex;align-items:center;justify-content:center"><img src="../../assets/catalogo/dis-comp-trave-i.png" style="max-height:100px;max-width:100%;display:block"></div><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#1D2A44">Travi a “I”</div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:11.5px;line-height:1.45;color:#686F79">Impieghi centrali, appoggi speciali a scomparsa.</div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><div style="height:120px;background:#F5F6F7;display:flex;align-items:center;justify-content:center"><img src="../../assets/catalogo/dis-comp-trave-u.png" style="max-height:100px;max-width:100%;display:block"></div><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#1D2A44">Travi a “U”</div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:11.5px;line-height:1.45;color:#686F79">Ampio invaso per la raccolta delle acque.</div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><div style="height:120px;background:#F5F6F7;display:flex;align-items:center;justify-content:center"><img src="../../assets/catalogo/dis-comp-arcareccio.png" style="max-height:100px;max-width:100%;display:block"></div><div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#1D2A44">Arcareccio</div><div style="font-family:'IBM Plex Sans',sans-serif;font-size:11.5px;line-height:1.45;color:#686F79">Portante secondario, altezza in funzione dei carichi.</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:0;border-top:1px solid #1D2A44">
+<div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #E1E3E5"><img src="../../assets/catalogo/icon-altezze.png" style="width:30px;display:block"><div style="flex:1;font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#3B3F45">Altezza trave “I”</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1D2A44">90 · 110 · 140 · 180 · 235 cm</div></div>
+<div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #E1E3E5"><img src="../../assets/catalogo/icon-altezze.png" style="width:30px;display:block;opacity:0"><div style="flex:1;font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#3B3F45">Altezza arcareccio</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1D2A44">56 · 66 · 86 · 96 cm</div></div>
+<div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #E1E3E5"><img src="../../assets/catalogo/icon-pendenza.png" style="width:30px;display:block"><div style="flex:1;font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#3B3F45">Pendenza copertura</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1D2A44">4%</div></div>
+<div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #E1E3E5"><img src="../../assets/catalogo/icon-nodi-sismici-alt.png" style="width:30px;display:block"><div style="flex:1;font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#3B3F45">Nodi sismici</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1D2A44">Certificati</div></div>
+<div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #E1E3E5"><img src="../../assets/catalogo/icon-resistenza-fuoco-alt.png" style="width:30px;display:block"><div style="flex:1;font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#3B3F45">Resistenza al fuoco</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1D2A44">Da R60' · R90' a R120', fino a R180'</div></div>
+<div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #E1E3E5"><img src="../../assets/catalogo/icon-maglia-strutturale.png" style="width:30px;display:block"><div style="flex:1;font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#3B3F45">Maglia strutturale</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1D2A44">A seconda della necessità</div></div>
+</div>
+<div style="flex:1"></div>
+<div style="background:#1D2A44;padding:28px 30px;display:flex;align-items:center;gap:26px">
+<div style="width:132px;height:132px;background:#EEF0F2;border:2px dashed #D3D7DC;box-sizing:border-box;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.5;color:#5A6472">QR<br>segnaposto<br>modello 3D</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px">
+<img src="https://unpkg.com/lucide-static@0.451.0/icons/scan-line.svg" style="width:24px;height:24px;filter:invert(1);opacity:.9">
+<div style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:17px;line-height:1.3;color:#FFFFFF">scopri la soluzione.</div>
+<div style="font-family:'IBM Plex Sans',sans-serif;font-size:12.5px;line-height:1.5;color:#B7BCC4">Inquadra il codice per vedere il modello 3D del sistema applicato a un edificio.</div>
+</div>
+</div>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px">
+<img src="../../assets/logo/moioli-lockup-colore.svg" style="width:260px;display:block">
+<div style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:14px;color:#B13733">Dove la forma prende volume</div>
+</div>
+</div>
+
+<sc-if value="{{ mostraPieghe }}" hint-placeholder-val="{{ true }}">
+<div style="position:absolute;inset:0;pointer-events:none">
+<div style="position:absolute;top:0;bottom:0;left:834px;width:0;border-left:1px dashed rgba(228,40,41,.55)"></div>
+<div style="position:absolute;top:0;bottom:0;left:1668px;width:0;border-left:1px dashed rgba(228,40,41,.55)"></div>
+<div style="position:absolute;top:0;bottom:0;left:2502px;width:0;border-left:1px dashed rgba(228,40,41,.55)"></div>
+</div>
+</sc-if>
+</div>
+</div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:3432,&quot;height&quot;:2400},&quot;mostraPieghe&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Impaginazione&quot;},&quot;mostraNumeri&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Impaginazione&quot;},&quot;mostraQrCopertina&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;QR&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      mostraPieghe: this.props.mostraPieghe ?? true,
+      mostraNumeri: this.props.mostraNumeri ?? true,
+      mostraQrCopertina: this.props.mostraQrCopertina ?? true,
+    };
+  }
+}
+
+</script>
+</body>
+</html>
