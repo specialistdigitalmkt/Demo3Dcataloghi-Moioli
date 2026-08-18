@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="styles.css"><style>html,body{margin:0;padding:0;overflow:hidden}#stage{width:1280px;height:854px;transform-origin:top left}</style>
+<div id="stage" style="display:flex;font-family:'Space Grotesk'">
+<div style="flex:1;min-width:0;overflow:hidden;background:#1D2A44;display:flex;align-items:center;justify-content:center;padding:60px"><img src="assets/logo/moioli-lockup-bianco.svg" style="width:60%;height:auto;display:block"></div>
+<div style="width:110px;display:flex;flex-direction:column">
+<div style="flex:1;background:#D98581"></div>
+<div style="flex:1;background:#B13733"></div>
+<div style="flex:1;background:#963029"></div>
+<div style="flex:1;background:#16203A"></div>
+</div>
+</div>
+<script>function fit(){const s=Math.min(window.innerWidth/1280,window.innerHeight/854);document.getElementById('stage').style.transform='scale('+s+')'}fit();window.addEventListener('resize',fit)</script>
