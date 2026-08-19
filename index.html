@@ -66,7 +66,7 @@ a{color:inherit;text-decoration:none}
 }
 
 /* ── Hero ───────────────────────────────────────────────────────── */
-.hero{background:var(--navy);color:#fff;padding:72px 0 84px}
+.hero{background:var(--navy);color:#fff;padding:clamp(44px,8vw,72px) 0 clamp(52px,9vw,84px)}
 .hero .eyebrow{color:var(--red-soft)}
 .hero h1{
   font-family:var(--font-display);font-weight:600;
@@ -78,7 +78,7 @@ a{color:inherit;text-decoration:none}
 }
 
 /* ── Griglia modelli ────────────────────────────────────────────── */
-main{padding:64px 0 96px}
+main{padding:clamp(40px,7vw,64px) 0 clamp(64px,10vw,96px)}
 .section-head{
   display:flex;align-items:baseline;justify-content:space-between;
   gap:24px;flex-wrap:wrap;
@@ -88,8 +88,8 @@ main{padding:64px 0 96px}
 .section-head .count{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.16em;color:var(--ui);text-transform:uppercase}
 
 .grid{
-  display:grid;gap:24px;
-  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  display:grid;gap:clamp(16px,2.4vw,24px);
+  grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));
 }
 
 .card{
@@ -100,7 +100,12 @@ main{padding:64px 0 96px}
              box-shadow var(--duration-slow) var(--ease),
              border-color var(--duration-fast) var(--ease);
 }
-a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift);border-color:var(--ph-border)}
+@media (hover:hover){
+  a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift);border-color:var(--ph-border)}
+  a.card:hover .thumb img{transform:scale(1.03)}
+  a.card:hover .cta{background:var(--red)}
+}
+a.card:active{transform:translateY(-1px)}
 a.card:focus-visible{outline:2px solid var(--red);outline-offset:3px}
 
 /* linguetta rossa: posizione verticale diversa per sistema (indice a rubrica) */
@@ -118,7 +123,6 @@ a.card:focus-visible{outline:2px solid var(--red);outline-offset:3px}
   width:100%;height:100%;object-fit:cover;display:block;
   transition:transform var(--duration-slow) var(--ease);
 }
-a.card:hover .thumb img{transform:scale(1.03)}
 .thumb.is-empty{
   display:flex;align-items:center;justify-content:center;
   background:var(--ph-bg);border-bottom:1px solid var(--ph-border);
@@ -158,7 +162,6 @@ a.card:hover .thumb img{transform:scale(1.03)}
   background:var(--navy);color:#fff;
   transition:background var(--duration-fast) var(--ease);
 }
-a.card:hover .cta{background:var(--red)}
 .cta.is-disabled{background:transparent;color:var(--ph-text);border:1px solid var(--ph-border);cursor:not-allowed}
 
 /* ── Footer ─────────────────────────────────────────────────────── */
@@ -167,9 +170,44 @@ a.card:hover .cta{background:var(--red)}
 .site-footer img{height:26px;width:auto;display:block;opacity:.9}
 .site-footer small{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase}
 
+/* ── Tablet ─────────────────────────────────────────────────────── */
+@media (max-width:1024px){
+  .hero h1{max-width:14ch}
+  .card-body{padding:22px 22px 24px}
+}
+
+/* ── Tablet verticale / mobile largo ────────────────────────────── */
+@media (max-width:768px){
+  .site-header .wrap{padding-top:16px;padding-bottom:16px}
+  .site-header img{height:28px}
+  .hero h1{max-width:100%}
+  .hero p{font-size:15px}
+  .section-head{margin-bottom:24px}
+  /* linguette piu' vicine tra loro: le card impilate sono meno alte del previsto */
+  .card::before{height:44px;top:calc(var(--tab-top,32px) * .6)}
+}
+
+/* ── Mobile ─────────────────────────────────────────────────────── */
+@media (max-width:520px){
+  .site-header .wrap{gap:12px}
+  .site-header .meta{font-size:10px;letter-spacing:.12em}
+  .thumb{aspect-ratio:16/9}
+  .card-body{padding:20px 20px 22px}
+  .card-body h2{font-size:19px}
+  .specs{gap:6px 14px}
+  .cta{align-self:stretch;text-align:center;padding:13px 20px}
+  .site-footer{padding:32px 0}
+  .site-footer .wrap{flex-direction:column;align-items:flex-start;gap:16px}
+}
+
+/* Schermi molto stretti: l'eyebrow del logo puo' far traboccare l'header */
+@media (max-width:360px){
+  .site-header .meta{display:none}
+}
+
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;animation:none!important}
-  a.card:hover{transform:none}
+  a.card:hover,a.card:active{transform:none}
   a.card:hover .thumb img{transform:none}
 }
 </style>
